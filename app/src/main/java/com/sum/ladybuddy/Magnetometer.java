@@ -45,7 +45,7 @@ public class Magnetometer extends AppCompatActivity implements SensorEventListen
      */
     private Sensor magnetometer ;
 
-    private SensorManager sensorManager; // read about SensorManger just by ttapping on where it is used.
+    private SensorManager sensorManager; // read about SensorManger// just by ttapping on where it is used.
     Boolean flag = false;
     double prevx = 0f;
 
