@@ -1,4 +1,4 @@
-package com.teamDroiders.ladybuddy;
+package com.sum.ladybuddy;
 
 public class News {
     String title;

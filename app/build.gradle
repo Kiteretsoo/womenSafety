@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.teamDroiders.ladybuddy"
+        applicationId "com.sum.ladybuddy"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 6

@@ -1,4 +1,4 @@
-package com.teamDroiders.ladybuddy;
+package com.sum.ladybuddy;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

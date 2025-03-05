@@ -1,4 +1,4 @@
-package com.teamDroiders.ladybuddy;
+package com.sum.ladybuddy;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

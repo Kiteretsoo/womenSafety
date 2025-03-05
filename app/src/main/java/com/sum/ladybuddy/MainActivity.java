@@ -1,4 +1,4 @@
-package com.teamDroiders.ladybuddy;
+package com.sum.ladybuddy;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.ClipData;
@@ -28,9 +29,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    CardView siren, location, Settings, currentlocation, community, news, aboutUs, shareBtn;
+
+
+    CardView siren, location, Settings, currentlocation, community, news, aboutUs, shareBtn,helpline,self_def;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -104,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
         currentlocation = findViewById( R.id.Currentlocation );
         news = findViewById( R.id.News );
         aboutUs = findViewById( R.id.about_us );
+        helpline = findViewById(R.id.helpline);
+        self_def = findViewById(R.id.self_def);
         // community=findViewById (R.id.community);
         siren.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -135,11 +141,23 @@ public class MainActivity extends AppCompatActivity {
         aboutUs.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity( new Intent( getApplicationContext(), AboutUs.class ) );
+                //startActivity( new Intent( getApplicationContext(), AboutUs.class ) );
+                startActivity( new Intent( getApplicationContext(), AIChat.class ) );
             }
 
         } );
-
+        helpline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Helpline.class));
+            }
+        });
+        self_def.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),SelfDef.class));
+            }
+        });
         shareBtn = findViewById(R.id.ShareBtn);
         shareBtn.setOnClickListener(new View.OnClickListener() {
 

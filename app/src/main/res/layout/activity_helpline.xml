@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Helpline">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="15dp"
+                android:text="National Helpline Numbers for Women’s Safety\nWomen’s Helpline (All India) - 181\nNational Commission for Women (NCW) Helpline - 7827 170 170\nPolice (Emergency) - 112\nWomen’s Domestic Violence Helpline - 1091\nChild Helpline (For minors) - 1098\nNational Human Rights Commission - 14433\nSenior Citizen Helpline - 14567\nCyber Crime Helpline (Cyber Harassment - Online Abuse) - 1930\nAnti-Stalking Helpline (Delhi) - 1096\nState-Specific Helplines for Women’s Safety\nDelhi Women’s Helpline - 1091 / 181\nMumbai Police Women’s Helpline - 103\nBangalore Women’s Helpline - 1091\nChennai Women’s Helpline - 1091 / 044-28592750\nKolkata Women’s Helpline - 1091 / 033-22143230\nHyderabad Women’s Helpline - 1091\nOther Important Helplines\nRailway Helpline (for Women Safety in Trains) - 139\nDelhi Metro Women’s Helpline - 011-23417910\nMumbai Railway Helpline - 98333 11111\nBangalore BMTC Women Helpline - 080-22372288"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
